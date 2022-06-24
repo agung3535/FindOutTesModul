@@ -22,7 +22,7 @@ struct ProfilePage: View {
                             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                         
                         VStack{
-                            Image("basket")
+                            Image("fotogue")
                                 .resizable()
                                 .frame(width: geo.size.width/4, height: geo.size.width/4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
@@ -35,7 +35,7 @@ struct ProfilePage: View {
                             Text("agungdwisaputra8@gmail.com")
                                 .padding(.vertical,10)
                                 .padding(.horizontal,15)
-                                .background(Color("TintColor"))
+                                .background(.white)
                                 .font(.system(size: 12))
                                 .foregroundColor(.white)
                                 .clipShape(Capsule())
