@@ -1,6 +1,6 @@
 workflows:
   my-workflow:                # workflow ID
-    name: Workflow TriangleApp    # workflow name displayed in Codemagic UI
+    name: FindOut workflow   # workflow name displayed in Codemagic UI
     environment:
       xcode: latest
       cocoapods: default
