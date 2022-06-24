@@ -35,9 +35,9 @@ struct ProfilePage: View {
                             Text("agungdwisaputra8@gmail.com")
                                 .padding(.vertical,10)
                                 .padding(.horizontal,15)
-                                .background(.white)
-                                .font(.system(size: 12))
                                 .foregroundColor(.white)
+                                .background(.blue)
+                                .font(.system(size: 12))
                                 .clipShape(Capsule())
                         }
                     }.frame(minWidth:0,maxWidth:.infinity, maxHeight:geo.size.height/3, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
