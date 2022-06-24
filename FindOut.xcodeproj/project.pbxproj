@@ -49,6 +49,7 @@
 		49C4FFA52865D4B700217835 /* HomeOut in Frameworks */ = {isa = PBXBuildFile; productRef = 49C4FFA42865D4B700217835 /* HomeOut */; };
 		49C4FFAA2865D50F00217835 /* FavoriteModule in Frameworks */ = {isa = PBXBuildFile; productRef = 49C4FFA92865D50F00217835 /* FavoriteModule */; };
 		49C4FFAC2865D51500217835 /* MovieModule in Frameworks */ = {isa = PBXBuildFile; productRef = 49C4FFAB2865D51500217835 /* MovieModule */; };
+		49C4FFAE2865D9C400217835 /* CoreFindOut in Frameworks */ = {isa = PBXBuildFile; productRef = 49C4FFAD2865D9C400217835 /* CoreFindOut */; };
 		49C878B528503E6E00B7AF9F /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C878B428503E6E00B7AF9F /* MenuItemView.swift */; };
 		49C878B7285046A800B7AF9F /* BannerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C878B6285046A800B7AF9F /* BannerHome.swift */; };
 		49CA31EE2849E98000913255 /* FindOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CA31ED2849E98000913255 /* FindOutApp.swift */; };
@@ -162,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4962489128524D1300532A8C /* RealmSwift in Frameworks */,
+				49C4FFAE2865D9C400217835 /* CoreFindOut in Frameworks */,
 				49C4FFAC2865D51500217835 /* MovieModule in Frameworks */,
 				49C4FFAA2865D50F00217835 /* FavoriteModule in Frameworks */,
 				496248862852445700532A8C /* Kingfisher in Frameworks */,
@@ -612,6 +614,7 @@
 				49C4FFA42865D4B700217835 /* HomeOut */,
 				49C4FFA92865D50F00217835 /* FavoriteModule */,
 				49C4FFAB2865D51500217835 /* MovieModule */,
+				49C4FFAD2865D9C400217835 /* CoreFindOut */,
 			);
 			productName = FindOut;
 			productReference = 49CA31EA2849E98000913255 /* FindOut.app */;
@@ -1175,6 +1178,10 @@
 		49C4FFAB2865D51500217835 /* MovieModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MovieModule;
+		};
+		49C4FFAD2865D9C400217835 /* CoreFindOut */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreFindOut;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
