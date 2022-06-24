@@ -10,8 +10,9 @@ import Foundation
 
 struct API {
     static let baseUrl = "https://api.themoviedb.org/3"
-    static let APIKEY = "api_key=80b5fd4d416c198a2917e73df9fec5d9"
+    static let APIKEY = "api_key=\(Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String ?? "")"
     static let imageURL = "https://image.tmdb.org/t/p/w500/"
+    static let imageURL2 = "https://image.tmdb.org/t/p/w100"
 }
 
 protocol EndPoint {

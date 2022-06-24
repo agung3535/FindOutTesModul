@@ -20,6 +20,7 @@ struct CardItem: View {
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 100)
             Text("\(name)")
                 .font(.system(size: 12))
+                .foregroundColor(.black)
                 .lineLimit(1)
                 .frame(width: UIScreen.main.bounds.size.width / 3, alignment: .leading)
                 .padding(.leading, 10)
@@ -31,6 +32,7 @@ struct CardItem: View {
                     .padding(.leading, 5)
                 Text("\(rating)")
                     .font(.system(size: 12))
+                    .foregroundColor(.black)
                     
             }
             .frame(width: UIScreen.main.bounds.size.width / 3, alignment: .leading)

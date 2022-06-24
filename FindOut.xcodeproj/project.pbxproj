@@ -114,6 +114,8 @@
 		4962487F28523FD800532A8C /* TvListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvListResponse.swift; sourceTree = "<group>"; };
 		4962489428524F8500532A8C /* Ext+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Error.swift"; sourceTree = "<group>"; };
 		4962489B285255C200532A8C /* PlayingListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingListEntity.swift; sourceTree = "<group>"; };
+		4982EDD12866023C008331CB /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Secrets.xcconfig; path = FindOut/ManageSecrets/Secrets.xcconfig; sourceTree = "<group>"; };
+		4982EDD228660300008331CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		499D6850285B083F00FAE700 /* DetailHomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeUseCase.swift; sourceTree = "<group>"; };
 		499D6852285B091E00FAE700 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		499D6854285B0D8900FAE700 /* OffsetModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetModifiers.swift; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 		49CA31E12849E98000913255 = {
 			isa = PBXGroup;
 			children = (
+				4982EDD12866023C008331CB /* Secrets.xcconfig */,
 				49CA31EC2849E98000913255 /* FindOut */,
 				49CA31FD2849E98300913255 /* FindOutTests */,
 				49CA32072849E98300913255 /* FindOutUITests */,
@@ -476,6 +479,7 @@
 		49CA31EC2849E98000913255 /* FindOut */ = {
 			isa = PBXGroup;
 			children = (
+				4982EDD228660300008331CB /* Info.plist */,
 				499D685C285B243600FAE700 /* Module */,
 				491F6B0F285AE18F008D92D0 /* App */,
 				4962486E285235C500532A8C /* Data */,
@@ -682,13 +686,13 @@
 			mainGroup = 49CA31E12849E98000913255;
 			packageReferences = (
 				496248812852409B00532A8C /* XCRemoteSwiftPackageReference "Alamofire" */,
-				496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher.git" */,
+				496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				4962488D28524D1300532A8C /* XCRemoteSwiftPackageReference "realm-cocoa" */,
-				496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */,
-				49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut.git" */,
-				49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule.git" */,
-				49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule.git" */,
-				49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind.git" */,
+				496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut" */,
+				49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule" */,
+				49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule" */,
+				49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind" */,
 			);
 			productRefGroup = 49CA31EB2849E98000913255 /* Products */;
 			projectDirPath = "";
@@ -821,6 +825,7 @@
 /* Begin XCBuildConfiguration section */
 		49CA320C2849E98300913255 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4982EDD12866023C008331CB /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -881,6 +886,7 @@
 		};
 		49CA320D2849E98300913255 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4982EDD12866023C008331CB /* Secrets.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -943,6 +949,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindOut/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindOut/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -971,6 +978,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindOut/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindOut/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1111,7 +1119,7 @@
 				kind = branch;
 			};
 		};
-		496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher.git" */ = {
+		496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -1127,7 +1135,7 @@
 				kind = branch;
 			};
 		};
-		496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */ = {
+		496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
 			requirement = {
@@ -1135,7 +1143,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut.git" */ = {
+		49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/agung3535/TesCoreFindOut.git";
 			requirement = {
@@ -1143,7 +1151,7 @@
 				kind = branch;
 			};
 		};
-		49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule.git" */ = {
+		49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/agung3535/FavoriteModule.git";
 			requirement = {
@@ -1151,7 +1159,7 @@
 				kind = branch;
 			};
 		};
-		49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule.git" */ = {
+		49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/agung3535/HomeOutModule.git";
 			requirement = {
@@ -1159,7 +1167,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind.git" */ = {
+		49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/agung3535/MovieModuleFind.git";
 			requirement = {
@@ -1177,7 +1185,7 @@
 		};
 		496248852852445700532A8C /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher.git" */;
+			package = 496248842852445700532A8C /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 		4962488E28524D1300532A8C /* Realm */ = {
@@ -1192,27 +1200,27 @@
 		};
 		496248972852548E00532A8C /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON.git" */;
+			package = 496248962852548E00532A8C /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
 		};
 		49D40DD22865EF38002CBEAE /* CoreFindOut */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut.git" */;
+			package = 49D40DD12865EF38002CBEAE /* XCRemoteSwiftPackageReference "TesCoreFindOut" */;
 			productName = CoreFindOut;
 		};
 		49D40DD62865F1BF002CBEAE /* FavoriteModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule.git" */;
+			package = 49D40DD52865F1BF002CBEAE /* XCRemoteSwiftPackageReference "FavoriteModule" */;
 			productName = FavoriteModule;
 		};
 		49D40DD92865F457002CBEAE /* HomeOut */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule.git" */;
+			package = 49D40DD82865F457002CBEAE /* XCRemoteSwiftPackageReference "HomeOutModule" */;
 			productName = HomeOut;
 		};
 		49D40DDC2865F5EC002CBEAE /* MovieModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind.git" */;
+			package = 49D40DDB2865F5EC002CBEAE /* XCRemoteSwiftPackageReference "MovieModuleFind" */;
 			productName = MovieModule;
 		};
 /* End XCSwiftPackageProductDependency section */

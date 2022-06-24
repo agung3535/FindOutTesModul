@@ -19,9 +19,12 @@ struct MoviePage: View {
             Color("SecondaryColor")
             ScrollView(.vertical) {
                 VStack(spacing: 5) {
-                    BannerHome()
-                        .frame(width: UIScreen.main.bounds.width, height: 180, alignment: .center)
-                        .background(.black)
+                    if self.moviePresenter.list.count != 0 {
+                        BannerHome(movie: self.moviePresenter.list)
+                            .frame(width: UIScreen.main.bounds.width, height: 180, alignment: .center)
+                            .background(.black)
+                    }
+                    
                     Text("Popular")
                         .font(.system(size: 14))
                         .padding(.leading, 10)
@@ -81,6 +84,12 @@ struct MoviePage: View {
                     }
                    Spacer()
                     
+                }
+            }
+            .onAppear {
+                if self.moviePresenter.list.count == 0 {
+                    print("aaaa")
+                    self.moviePresenter.getPopular(request: nil, index: 0)
                 }
             }
             

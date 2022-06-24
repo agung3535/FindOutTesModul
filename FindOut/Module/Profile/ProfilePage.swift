@@ -32,15 +32,23 @@ struct ProfilePage: View {
                                 .foregroundColor(.white)
                                 .padding(.top,10)
                             
-                            Text("agungdwisaputra8@gmail.com")
-                                .padding(.vertical,10)
-                                .padding(.horizontal,15)
-                                .foregroundColor(.white)
-                                .background(.blue)
-                                .font(.system(size: 12))
-                                .clipShape(Capsule())
+                            
                         }
                     }.frame(minWidth:0,maxWidth:.infinity, maxHeight:geo.size.height/3, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                   
+                    
+                    HStack {
+                        Image(systemName: "envelope.fill")
+                            .foregroundColor(.black)
+                        Text("agungdwisaputra8@gmail.com")
+                            .padding(.horizontal,5)
+                            .foregroundColor(.white)
+                    }
+                    .padding(.top, 15)
+                    .padding(.bottom, 15)
+                    .background(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    
                     Spacer()
                     
                 }

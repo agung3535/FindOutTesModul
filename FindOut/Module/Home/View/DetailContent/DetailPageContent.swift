@@ -47,19 +47,8 @@ struct DetailPageContent: View {
                                 if favoritePresenter.isFavorite {
                                     favoritePresenter.removeFavorite(id: "\(detailData.id)", endPoint: EndPoints.EP.detailMovie("\(detailData.id)").url)
                                 } else {
-                                   
-                                    
                                     favoritePresenter.addFavorite(id: "\(detailData.id)", endPoint: EndPoints.EP.detailMovie("\(detailData.id)").url)
                                 }
-//                                if detailViewModel.isFavorite {
-//                                    if detailData.name != nil {
-//                                        detailViewModel.deleteFavorite(object: detailViewModel.favGameDataNew[0])
-//                                    }
-//                                }else{
-//                                    if(detailData.name != nil && detailData.genres != nil && detailData.backgroundImage != nil){
-//                                        detailViewModel.addFavorite(name: detailData.name!, image: detailData.backgroundImage!, genre: detailData.genres!)
-//                                    }
-//                                }
                             }, label: {
                                 Image(systemName: (self.favoritePresenter.isFavorite ? "heart.fill" : "heart"))
                                     .resizable()
